@@ -1,0 +1,6 @@
+#Stub file for live coding demo
+
+---
+AWSTemplateFormatVersion: '2010-09-09'
+# set AWS_PROFILE=your-amazon-profile-name
+# aws cloudformation create-stack --stack-name demo-ec2-yaml --template-body file://demo.yaml
