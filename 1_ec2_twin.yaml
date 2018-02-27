@@ -1,0 +1,17 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+# set AWS_PROFILE=your-amazon-profile-name
+# aws cloudformation create-stack --stack-name demo-ec2-yaml --template-body file://demo.yaml
+Resources:
+  WebServer:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: "ami-942dd1f6"
+      InstanceType: "t2.micro"
+      Monitoring: False
+  DBServer:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: "ami-942dd1f6"
+      InstanceType: "t2.nano"
+      Monitoring: False
